@@ -98,12 +98,23 @@ submitBtn.addEventListener('click', ()=> {
             quiz.innerHTML = `
             <h2>You have answered ${score}/${quizData.length} questions correctly.</h2>`
             //* for respective correct questions, give a custom message 
-            setInterval(()=>{
-                questionEl.innerText = "You will be shortly redirected to the first question";
-            },8000)
-            setInterval(()=>{
+
+            // todo: add button to reload  
+            const reloadBtn = document.createElement("button");
+            reloadBtn.textContent = 'Reload';
+            quiz.style.height = '20rem';
+            quiz.appendChild(reloadBtn);
+            reloadBtn.addEventListener('click', function() {
                 location.reload();
-            },15000)
+            });
+            reloadBtn.addEventListener('hover', function() {
+                reloadBtn.style.backgroundColor = '#ff0021';
+                
+            });
+            reloadBtn.style.position = 'relative';
+            reloadBtn.style.top = '8rem';
+            reloadBtn.style.backgroundColor = '#ff1837';
         }
+
     }
-})
+});

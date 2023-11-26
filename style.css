@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .quiz-header {
     padding: 1rem 0 0.9rem 0;

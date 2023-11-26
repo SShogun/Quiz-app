@@ -97,9 +97,9 @@ submitBtn.addEventListener('click', ()=> {
         else {
             quiz.innerHTML = `
             <h2>You have answered ${score}/${quizData.length} questions correctly.</h2>`
-            //* for respective correct questions, give a custom message 
+            //! for respective correct questions, give a custom message 
 
-            // todo: add button to reload  
+            //  todo: add button to reload  - Completed//
             const reloadBtn = document.createElement("button");
             reloadBtn.textContent = 'Reload';
             quiz.style.height = '20rem';
